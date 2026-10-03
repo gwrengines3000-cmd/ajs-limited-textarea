@@ -1,4 +1,4 @@
-// for your textarea element:
+import React from 'react'
 const textareaStyle = {
     width: '300px',
     height: '150px',
@@ -13,7 +13,7 @@ const pStyle = {
 }
 
 const LimitedTextarea = ({ maxLength }) => {
-    const [text, setText] = React.useState('200 characters max');
+    const [text, setText] = React.useState('');
 
     const handleChange = (event) => {
         const newText = event.target.value;
